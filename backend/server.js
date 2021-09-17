@@ -22,7 +22,7 @@ app.use(cors());
 
 // DB config
 const connection_url =
-  "mongodb+srv://admin:R1eccsFsFRcz7JQn@cluster0.ft3c0.mongodb.net/instadb?retryWrites=true&w=majority";
+  "mongodb+srv://admin:<password>@cluster0.ft3c0.mongodb.net/instadb?retryWrites=true&w=majority";
 mongoose.connect(connection_url, (err) => {
   if (err) throw err;
   console.log("connected to MongoDB");
